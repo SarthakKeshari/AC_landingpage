@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+    <link rel = "icon" href =  "android_club_logo.png" type = "image/x-icon">
+    <title>Android Club</title>
+    <style>
+        body{
+            background-color: #000000;
+        }
+        .fdiv{
+            background: url(backgrounda.jpg);
+            background-size: cover;
+            height: 92vh;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .mobile{
+            position: relative;
+            width: 270px;
+            height: 480px;
+            background-color: #020c17;
+            box-shadow: 1px 1px 5px #efefef;
+        }
+
+        .top{
+            position: absolute;
+            top: -50px;
+            width: 100%;
+            height: 50px;
+            background: #efefeF;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            box-shadow: 1px 1px 5px #ffffff;
+        }
+        .top:before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: #ccc;
+            border: 2px solid #aaa;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px #999;
+        }
+        .top:after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40px;
+            height: 3px;
+            background: #333;
+            border: 2px solid #aaa;
+            border-radius: 3px;
+        }
+
+        .bottom{
+            position: absolute;
+            bottom: -35px;
+            width: 100%;
+            height: 35px;
+            background: #efefef;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            line-height: 7px;
+            box-shadow: 1px 1px 5px #ffffff;
+        }
+
+        .screen{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .screen img{
+            
+            width: 100%;
+            /* height: 100%; */
+            object-fit: cover;
+            animation: logo 3s forwards;
+        }
+        @keyframes logo{
+            0%{
+                opacity: 0%;
+            }
+            100%{
+                opacity: 100%;
+            }
+        }
+
+        .lines p:nth-child(1)
+        {
+            animation: line1 5s forwards;
+        }
+        .lines p:nth-child(2)
+        {
+            animation: line2 8s forwards;
+        }
+        .lines p:nth-child(3)
+        {
+            animation: line3 11s forwards;
+        }
+        @keyframes line1{
+            0%{
+                opacity: 0%;
+                transform: translateX(-10px);
+            }
+            100%{
+                opacity: 100%;
+                transform: translateX(0px);
+            }
+        }
+        @keyframes line2{
+            0%{
+                opacity: 0%;
+                transform: translateX(0px);
+            }
+            100%{
+                opacity: 100%;
+                transform: translateX(-10px);
+            }
+        }
+        @keyframes line3{
+            0%{
+                opacity: 0%;
+                transform: translateX(-10px);
+            }
+            100%{
+                opacity: 100%;
+                transform: translateX(0px);
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background-color: #f7c12e;">
+        <div class="container">
+            <img src="android_logo.png" alt="" width="40" height="40" class="d-inline-block align-top">
+            <a class="navbar-brand p-2" href="#">
+                
+                Android Club
+              </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link pr-4 active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pr-4" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pr-4" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link pr-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="fdiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mt-5">
+                    <div class="mobile">
+                        <div class="top">
+                
+                        </div>
+                        <div class="bottom">
+                                <p class="m-1" style="font-size: 10px;">Powered by</p>
+                                <p class="m-1">VIT, Chennai</p>
+                        </div>
+                        <div class="screen">
+                            <div class="row">
+                                <div class="col-12">
+                                    <img src="android_club_logo.png" alt="">
+                                </div>
+                                <div class="col-12 text-center lines">
+                                    <p class="display-5 p-0 m-0 pl-1 mr-5" style="color: #efefef;">Innovate</p>
+                                    <p class="display-5 p-0 m-0 pl-5 ml-5" style="color: #efefef;">Create</p>
+                                    <p class="display-5 p-0 m-0 pl-1 mr-5" style="color: #efefef;">Reinvent</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 d-flex justify-content-center">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <!-- <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                        </ol> -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="cupcake.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h4 class="text-dark">Android version 1.5: Cupcake</h4>
+                              <p style="color: #a17917; font-size: large;">On April 27, 2009, the Android updated to 1.5 with the codename of the dessert item (Cupcake). It has Linux kernel 2.6.27. It supports third-party virtual keyboard, Video recording and playback in MPEG-4, Copy and paste feature, Animated screen translations, auto-rotation option, ability to upload a video to YouTube, upload photos to Picasa, check phone usage history.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="donut.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h4 class="text-dark">Android version 1.6: Donut</h4>
+                              <p style="color: #a17917; font-size: large;">On September 15, 2009, Android 1.6 was released with the name Donut. It contains numerous new features such as voice and text entry search, bookmark history, contacts, web, "speak" a string of text, faster camera access, user can select multiple photos for deletion, support text-to-speech engine, WVGA screen resolutions.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="eclair.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h4 class="text-dark">Android version 2.0 to 2.1: Eclair</h4>
+                              <p style="color: #a17917; font-size: large;">On October 26, 2009, Android 2.0 was released, whose codename was Eclair. It was based on Linux kernel 2.6.29. It contains the several new features as expanded account sync, Microsoft Exchange email support, Bluetooth 2.1, ability to tap a Contact photo and select to call, SMS, ability to search all saved SMS, MMS messages, delete the oldest message automatically when the defined limit is reached, Minor API, bug fixes.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="froyo.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h4 class="text-dark">Android version 2.2 to 2.2.3: Froyo</h4>
+                              <p style="color: #a17917; font-size: large;">On May 20, 2010, Android 2.2 (Froyo) was released based on Linux kernel 2.6.32. It contains several features as speed, memory, performance optimization. JIT compilation, Integration of Chrome's V8, JavaScript engine into the Browser application, support Android Cloud to Device Messaging service, Adobe Flash support, security updates, and performance improvement.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="gingerbread.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h4 class="text-dark">Android version 2.3 to 2.3.7: Gingerbread</h4>
+                              <p style="color: #a17917; font-size: large;">On December 6, 2010, the Android 2.3 (Gingerbread) was released based on Linux kernel 2.6.35. It includes the following changes: support for extra-large screen size and resolutions, updated user interface design with increased simplicity and speed, enhanced copy/paste functionality, select a word by press-holding, support Near Field Communication (NFC), headphone virtualization, new Download Manager.
+                                <br>
+                                It has improved bug fixes for Nexus S, voice or video chat using Google Talk, network performance for Nexus S 4G, Gmail application, battery efficiency, fixed a voice search bug, Google Wallet support for Nexus S 4G.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper.js and Bootstrap JS
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
